@@ -2,62 +2,68 @@
 
 body {
     background-color: $primary-color;
-}
 
-.homepage-container {
-    .MuiBox-root-103 {
-        padding: 0;
+
+    .homepage-container {
+        .MuiBox-root-103 {
+            padding: 0;
+        }
     }
-}
 
-.header-img {
-    width: 100%;
-    position: relative;
-
-    img {
+    .header-img {
         width: 100%;
-        height: 32rem;
-        object-fit: cover;
-        opacity: 0.3;
-    }
+        position: relative;
 
-    .img-text {
-        text-align: center;
-        // color: $primary-color;
-        position:absolute;
-        left:50%;
-        top:50%;
-        transform: translate(-50%,-50%);
-
-        h1 {
-            font-weight: 600;
+        img {
+            width: 100%;
+            height: 32rem;
+            object-fit: cover;
+            opacity: 0.3;
         }
 
-        p {
-            font-weight: 600;
-        }
+        .img-text {
+            text-align: center;
+            // color: $primary-color;
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
 
-        .read-btn {
-            width: 200px;
-            padding: 0.8rem;
-            border-radius: 5rem;
-            font-size: 1.1rem;
-            font-weight: 600;
-            background-color: $secondary-color;
-            border: none;
+            h1 {
+                font-weight: 600;
+            }
 
-            &:hover {
-                background-color: $heavy-dark;
+            p {
+                font-weight: 600;
+            }
+
+            .read-btn {
+                width: 200px;
+                padding: 0.8rem;
+                border-radius: 5rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+                background-color: $secondary-color;
                 border: none;
+
+                &:hover {
+                    background-color: $heavy-dark;
+                    border: none;
+                }
             }
         }
     }
-}
 
-.text-input {
-    width: 400px;
-}
+    .featured-heading {
+        margin-top: 4rem;
+        color: $heavy-dark;
+    }
 
-.form-btn {
-    width: 200px;
+    .text-input {
+        width: 400px;
+    }
+
+    .form-btn {
+        width: 200px;
+    }
 }

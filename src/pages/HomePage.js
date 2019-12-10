@@ -113,6 +113,7 @@ export default function HomePage() {
         </div>
       
         <Container maxWidth="lg">
+          <Typography gutterBottom variant="h4" component="h1" className="featured-heading">Featured books</Typography>
           <Cards></Cards>
           <Cards></Cards>
         </Container>
