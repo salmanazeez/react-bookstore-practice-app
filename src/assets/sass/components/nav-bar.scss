@@ -1,0 +1,10 @@
+@import "./variables.scss";
+
+.customize-navbar {
+    align-items: center;
+
+    .nav-title {
+        padding: 1rem;
+        margin: 0 1rem 0 0;
+    }
+}

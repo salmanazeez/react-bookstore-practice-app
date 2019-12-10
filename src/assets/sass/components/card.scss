@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+.card-container {
+    display: inline-block;
+    margin: 1rem;
+    // box-shadow: 0 0 1.3rem rgba(0,0,0,.1);
+    // overflow: hidden;
+    transition: all .15s linear;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 1.2rem $light-dark;
+    }
+    
+    .card-image {
+        height: 250px;
+    }
+    
+    .card-actions {
+        color: $light-dark;
+    }
+}
