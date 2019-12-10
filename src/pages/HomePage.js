@@ -7,7 +7,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Cards from '../components/card';
-import VerticalCard from '../components/veritcal-card';
+import HorizontalCard from '../components/horizontal-card';
 import Container from '@material-ui/core/Container';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -121,8 +121,8 @@ export default function HomePage() {
 
         <Container maxWidth="lg">
           <Typography gutterBottom variant="h4" component="h1" className="featured-heading">Wishlist</Typography>
-          <VerticalCard></VerticalCard>
-          <VerticalCard></VerticalCard>
+          <HorizontalCard></HorizontalCard>
+          <HorizontalCard></HorizontalCard>
         </Container>
       </TabPanel>
       <TabPanel value={value} index={1}>
