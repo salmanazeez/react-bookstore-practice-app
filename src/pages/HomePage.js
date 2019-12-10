@@ -123,9 +123,18 @@ export default function HomePage() {
         </Container>
 
         <Container maxWidth="lg">
-          <Typography gutterBottom variant="h4" component="h1" className="featured-heading">Wishlist</Typography>
-          <HorizontalCard></HorizontalCard>
-          <HorizontalCard></HorizontalCard>
+          <Row>
+            <Col sm={12} md={6}>
+              <Typography gutterBottom variant="h4" component="h1" className="featured-heading">Wishlist</Typography>
+              <HorizontalCard></HorizontalCard>
+              <HorizontalCard></HorizontalCard>
+            </Col>
+            <Col sm={12} md={6}>
+              <Typography gutterBottom variant="h4" component="h1" className="featured-heading">Documentry</Typography>
+              <HorizontalCard></HorizontalCard>
+              <HorizontalCard></HorizontalCard>
+            </Col>
+          </Row>
         </Container>
         
         <Container maxWidth="lg">
