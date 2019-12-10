@@ -125,37 +125,10 @@ export default function SimpleTabs() {
         </Container>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Card className={classes.card}>
-          <div className={classes.details}>
-            <CardContent className={classes.content}>
-              <Typography component="h5" variant="h5">
-                Hymn for the weekend
-              </Typography>
-              <Typography variant="subtitle1" color="textSecondary">
-                Coldplay
-              </Typography>
-            </CardContent>
-            <div className={classes.controls}>
-              <IconButton aria-label="previous">
-                {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-              </IconButton>
-              <IconButton aria-label="play/pause">
-                <PlayArrowIcon className={classes.playIcon} />
-              </IconButton>
-              <IconButton aria-label="next">
-                {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-              </IconButton>
-            </div>
-          </div>
-          <CardMedia
-            className={classes.cover}
-            image="https://upload.wikimedia.org/wikipedia/en/e/e5/Coldplay%2C_Hymn_for_the_Weekend%2C_Artwork.jpg"
-            title="Live from space album cover"
-          />
-        </Card>
+        Panel two
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        Panel three
       </TabPanel>
     </div>
   );
