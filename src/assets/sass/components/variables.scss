@@ -1,4 +1,5 @@
 $primary-color: #EDF2F4;
+$white: #ffffff;
 $secondary-color: #a10013;
 
 $heavy-dark: #8c0112;
@@ -6,4 +7,5 @@ $dark: #2B2D42;
 $light-dark: #666666;
 
 
-$background-radiant: linear-gradient(90deg, rgba(255,169,186,1) 0%, rgba(255,171,187,1) 39%, rgba(255,208,217,1) 100%);
+$background-radiant: linear-gradient(90deg, rgba(255,146,168,1) 0%, rgba(255,156,175,1) 39%, rgba(255,192,204,1) 100%);
+$primary-shadow: 0 0 1.2rem $light-dark;
