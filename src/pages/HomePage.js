@@ -124,6 +124,12 @@ export default function HomePage() {
           <HorizontalCard></HorizontalCard>
           <HorizontalCard></HorizontalCard>
         </Container>
+        
+        <Container maxWidth="lg">
+          <div className="featured-book-container">
+            <img src={require('../assets/img/sherlock.jpg')} alt="holder"/>
+          </div>
+        </Container>
       </TabPanel>
       <TabPanel value={value} index={1}>
         Panel two
