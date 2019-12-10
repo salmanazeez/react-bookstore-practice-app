@@ -6,19 +6,11 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import Cards from './card';
+import Cards from '../components/card';
 import Container from '@material-ui/core/Container';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import IconButton from '@material-ui/core/IconButton';
-import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import SkipNextIcon from '@material-ui/icons/SkipNext';
-import Image from 'react-bootstrap/Image';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -85,13 +77,13 @@ const theme = createMuiTheme({
       main: '#EDF2F4',
     },
     secondary: {
-        main: '#2B2D42'
+        main: '#D90429'
       },
     }
   },
 )
 
-export default function SimpleTabs() {
+export default function HomePage() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -111,11 +103,12 @@ export default function SimpleTabs() {
         </AppBar>
       </MuiThemeProvider>
       <TabPanel value={value} index={0} className="homepage-container">
-        <div className="img-holder">
-          <img src={require('../assets/img/bubble.jpg')} alt="holder"/>
+        <div className="header-img">
+          <img src={require('../assets/img/crushing-it.jpg')} alt="holder"/>
           <div className="img-text">
             <h1>Crushing it!</h1>
             <p>How Great Entrepreneurs Build Their Business and Influence-and How You Can, Too</p>
+            <Button variant="danger" className="read-btn">Read book</Button>
           </div>
         </div>
       

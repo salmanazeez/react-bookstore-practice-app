@@ -5,13 +5,13 @@ import './assets/sass/components/nav-bar.scss';
 import './assets/sass/components/card.scss';
 
 import React, { Component } from 'react'
-import NavBar from './components/NavBar'
+import HomePage from './pages/HomePage'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
+        <HomePage />
       </div>
     )
   }
