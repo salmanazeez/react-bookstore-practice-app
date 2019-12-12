@@ -102,7 +102,7 @@ export default function HomePage() {
         <AppBar position="static" className="customize-navbar">
           <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
             <Tab label="Home" {...a11yProps(0)} className="nav-title" />
-            <Tab label="Categories" {...a11yProps(1)} className="nav-title" />
+            <Tab label="Book details" {...a11yProps(1)} className="nav-title" />
             <Tab label="Events" {...a11yProps(2)} className="nav-title" />
           </Tabs>
         </AppBar>
