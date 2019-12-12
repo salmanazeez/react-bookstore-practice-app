@@ -1,5 +1,4 @@
 import React from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,12 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Rating from '@material-ui/lab/Rating';
 import { Container } from '@material-ui/core';
-
-// const useStyles = makeStyles(theme => ({
-//     root: {
-//       flexGrow: 1,
-//     },
-//   }));
 
   export default function BookDetails() {
   
