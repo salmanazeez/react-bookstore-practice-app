@@ -36,7 +36,9 @@ import { Container } from '@material-ui/core';
                     <Col sm={12} md={5}></Col>
                     <Col sm={12} md={7}>
                         <Typography gutterBottom variant="body1" component="p" className="book-container-heading">The Original Illustrated Sherlock Homes</Typography>
-                        <Button variant="danger" className="book-details-btn">Read book</Button>
+                        <Typography gutterBottom variant="h5" component="h5" className="book-price">USD 59.99</Typography>
+                        <Button variant="danger" className="book-details-btn">Purchase</Button>
+                        <Button variant="danger" className="book-details-btn">Read</Button>
                     </Col>
                 </Row>
             </Container>

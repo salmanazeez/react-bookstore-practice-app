@@ -36,10 +36,19 @@ body {
 
         .container-footer {
             background-color: $pink;
-            color: $heavy-dark;
+            color: $dark;
             max-width: 100%;
-            height: 200px;
+            height: auto;
             transform: translate(0, 50%);
+
+            .row {
+                padding: 4rem 0 4rem 0;
+            }
+
+            .book-price {
+                color: $heavy-dark;
+                font-weight: 600;
+            }
 
             .book-details-btn {
                 width: 200px;
@@ -50,8 +59,12 @@ body {
                 color: $secondary-color;
                 background-color: $white;
                 border: none;
-                margin-top: 1rem;
-                box-shadow: $primary-shadow;
+                margin: 1rem 1rem 1rem 0;
+
+                &:hover {
+                    transform: scale(1.02);
+                    box-shadow: $primary-shadow;
+                }
             }
         }
     }
