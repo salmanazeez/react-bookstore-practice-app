@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Cards from '../components/card';
 import HorizontalCard from '../components/horizontal-card';
+import BookDetails from '../components/book-details';
 import Container from '@material-ui/core/Container';
 import Rating from '@material-ui/lab/Rating';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
@@ -89,7 +90,7 @@ const theme = createMuiTheme({
 
 export default function HomePage() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(1);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -157,7 +158,7 @@ export default function HomePage() {
         </Container>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Panel two
+        <BookDetails></BookDetails>
       </TabPanel>
       <TabPanel value={value} index={2}>
         Panel three
