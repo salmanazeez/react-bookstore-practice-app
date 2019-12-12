@@ -1,0 +1,58 @@
+@import "./variables.scss";
+
+body {
+    .book-details-container {
+        width: 100%;
+        color: $dark;
+    
+        img {
+            height: 650px;
+            margin: 4rem 0 4rem 4rem;
+            box-shadow: $primary-shadow;
+            z-index: 1;
+            position: absolute;
+        }
+    
+        .book-container-texts {
+            .book-container-heading {
+                font-weight: 600;
+                margin-top: 10%;
+            }
+    
+            .book-rating {
+                margin-bottom: 0;
+    
+                .rating-stars {
+                    color: $secondary-color;
+                    margin: 1rem 0 1rem 0;
+                }
+            }
+    
+            .book-description {
+                margin: 0 4rem 0 0;
+                text-align: justify;
+            }
+        }
+
+        .container-footer {
+            background-color: $pink;
+            color: $heavy-dark;
+            max-width: 100%;
+            height: 200px;
+            transform: translate(0, 50%);
+
+            .book-details-btn {
+                width: 200px;
+                padding: 0.8rem;
+                border-radius: 5rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: $secondary-color;
+                background-color: $white;
+                border: none;
+                margin-top: 1rem;
+                box-shadow: $primary-shadow;
+            }
+        }
+    }
+}
