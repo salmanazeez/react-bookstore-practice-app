@@ -9,6 +9,10 @@ import React, { Component } from 'react'
 import HomePage from './pages/HomePage'
 
 class App extends Component {
+  componentDidMount(){
+    document.title = "Bookstore"
+  }
+  
   render() {
     return (
       <div>
