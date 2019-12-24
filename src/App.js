@@ -1,6 +1,5 @@
 import './App.css';
 import './assets/sass/components/home.scss';
-import './assets/sass/components/variables.scss'
 import './assets/sass/components/nav-bar.scss';
 import './assets/sass/components/card.scss';
 import './assets/sass/components/book-details.scss';
