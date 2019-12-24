@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Cards from '../components/card';
@@ -16,6 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import NavbarDrawer from '../components/nav'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -39,13 +37,6 @@ TabPanel.propTypes = {
   index: PropTypes.any.isRequired,
   value: PropTypes.any.isRequired,
 };
-
-function a11yProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-  };
-}
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -92,21 +83,12 @@ export default function HomePage() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
   return (
     <div className={classes.root}>
       <MuiThemeProvider theme={theme}>
-        <AppBar position="static" className="customize-navbar">
-          <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-            <Tab label="Home" {...a11yProps(0)} className="nav-title" />
-            <Tab label="Book details" {...a11yProps(1)} className="nav-title" />
-            <Tab label="Events" {...a11yProps(2)} className="nav-title" />
-          </Tabs>
-        </AppBar>
+        <NavbarDrawer></NavbarDrawer>
       </MuiThemeProvider>
+      
       <TabPanel value={value} index={0} className="homepage-container">
         <div className="header-img">
           <img src={require('../assets/img/crushing-it.jpg')} alt="holder"/>
