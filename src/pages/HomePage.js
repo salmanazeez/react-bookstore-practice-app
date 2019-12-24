@@ -81,7 +81,7 @@ const theme = createMuiTheme({
 
 export default function HomePage() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  const [value] = React.useState(0);
 
   return (
     <div className={classes.root}>

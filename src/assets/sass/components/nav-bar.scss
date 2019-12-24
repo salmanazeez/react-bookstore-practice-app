@@ -8,3 +8,54 @@
         margin: 0 1rem 0 0;
     }
 }
+
+
+.nav-container {
+    width: 100%;
+    
+    .MuiAppBar-root {
+        flex-direction: unset;
+        flex-shrink: unset;
+    }   
+    
+    .lg-nav {
+        display: contents;
+    }
+
+    button {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            color: $secondary-color;
+        }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        .MuiPaper-root {
+            box-shadow: none;
+            background-color: transparent;
+            color: $secondary-color;
+        }
+
+        .makeStyles-drawerPaper-14 {
+            background-color: $primary-color;
+        }
+
+        button {
+            display: unset;
+        }
+        
+        .nav-title {
+            display: none;
+        }
+
+        .lg-nav {
+            display: none;
+        }
+    }
+}
