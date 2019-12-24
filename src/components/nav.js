@@ -173,9 +173,9 @@ export default function NavbarDrawer() {
               aria-label="nav tabs example"
               className="lg-nav"
             >
-              <LinkTab label="Page One" href="/drafts" {...a11yProps(0)} />
-              <LinkTab label="Page Two" href="/trash" {...a11yProps(1)} />
-              <LinkTab label="Page Three" href="/spam" {...a11yProps(2)} />
+              <LinkTab label="Home" href="/drafts" {...a11yProps(0)} />
+              <LinkTab label="Categories" href="/trash" {...a11yProps(1)} />
+              <LinkTab label="Subscription" href="/spam" {...a11yProps(2)} />
             </Tabs>
         </AppBar>
         <div className="mobile-nav">
