@@ -34,8 +34,10 @@
             color: $secondary-color;
         }
     }
+}
 
-    @media (max-width: $breakpoint-mobile) {
+@media (max-width: $breakpoint-mobile) {
+    .nav-container {
         .MuiPaper-root {
             box-shadow: none;
             background-color: transparent;
